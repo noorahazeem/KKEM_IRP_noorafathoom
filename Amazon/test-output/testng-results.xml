@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-27T13:09:56 IST" name="Default suite" finished-at="2025-02-27T13:10:54 IST" duration-ms="57980">
+    <groups>
+    </groups>
+    <test started-at="2025-02-27T13:09:56 IST" name="Default test" finished-at="2025-02-27T13:10:54 IST" duration-ms="57980">
+      <class name="test.MainTest">
+        <test-method is-config="true" signature="config()[pri:0, instance:test.MainTest@5bda8e08]" started-at="2025-02-27T13:09:56 IST" name="config" finished-at="2025-02-27T13:10:01 IST" duration-ms="5353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method is-config="true" signature="object()[pri:0, instance:test.MainTest@5bda8e08]" started-at="2025-02-27T13:10:01 IST" name="object" finished-at="2025-02-27T13:10:01 IST" depends-on-methods="base.Basetest.config" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- object -->
+        <test-method signature="try_purchase()[pri:1, instance:test.MainTest@5bda8e08]" started-at="2025-02-27T13:10:01 IST" name="try_purchase" finished-at="2025-02-27T13:10:31 IST" duration-ms="29436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- try_purchase -->
+        <test-method signature="cart_optons()[pri:2, instance:test.MainTest@5bda8e08]" started-at="2025-02-27T13:10:31 IST" name="cart_optons" finished-at="2025-02-27T13:10:53 IST" duration-ms="22464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cart_optons -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.MainTest@5bda8e08]" started-at="2025-02-27T13:10:53 IST" name="tearDown" finished-at="2025-02-27T13:10:54 IST" duration-ms="608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.MainTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

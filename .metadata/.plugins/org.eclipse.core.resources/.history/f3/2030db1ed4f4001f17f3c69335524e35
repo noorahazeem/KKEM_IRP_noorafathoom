@@ -1,0 +1,36 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Cart {
+
+WebDriver driver;
+	
+	public Cart(WebDriver drv) {
+		this.driver=drv;
+	}
+	@SuppressWarnings("finally")
+	public boolean isDisplayed() {
+		try {
+			WebElement icon=driver.findElement(By.xpath(""));
+			return icon.isDisplayed();
+		}finally{
+			return false;
+		}
+	}
+	public void navigatetoCart() {
+		WebElement  cart=driver.findElement(By.xpath("//span[@class='nav-cart-icon nav-sprite']"));
+		cart.click();
+	}
+	@SuppressWarnings("finally")
+	public  boolean itemDisplayed() {
+		try {
+			WebElement item=driver.findElement(By.xpath(""));
+			return item.isDisplayed();
+		}finally{
+			return false;
+		}
+	}
+}

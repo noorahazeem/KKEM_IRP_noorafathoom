@@ -1,0 +1,41 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Mainpage {
+	WebDriver driver;
+	
+	public Mainpage(WebDriver drv) {
+		this.driver=drv;
+	}
+	
+	public  void search() {
+		WebElement srch=driver.findElement(By.xpath("//input[@type='text' and @id='twotabsearchtextbox']"));
+		srch.sendKeys("s23 ultra");
+		WebElement button=driver.findElement(By.xpath("//input[@type='submit' and @id='nav-search-submit-button']"));
+		button.click();
+	}
+	public void see_options() {
+		WebElement seeopt=driver.findElement(By.xpath("//a[text()='See options' and @id='a-autoid-1-announce']"));
+		seeopt.click();
+	}
+	public void colour() {
+		WebElement colour=driver.findElement(By.xpath("(//input[@name='2' and @class='a-button-input'])[1]"));
+		colour.click();
+		WebElement buy=driver.findElement(By.xpath("//a[text()=' See All Buying Options ']"));
+		buy.click();
+	}
+	public WebElement not_available() {
+		WebElement text=driver.findElement(By.xpath("//span[@class='a-color-error']"));
+		text.getText();
+		return text;
+		
+	}
+	public void tab_close() {
+		WebElement close=driver.findElement(By.xpath("//i[@class='a-icon aod-close-button']"));
+		close.click();
+	}
+	
+}

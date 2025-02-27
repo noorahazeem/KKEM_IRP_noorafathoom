@@ -1,0 +1,25 @@
+package test;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.reporters.jq.Main;
+
+import base.Basetest;
+
+public class MainTest extends  Basetest {
+	
+	Main obj;
+	 @BeforeTest
+	    public void object() {
+	     obj=new Main(driver);
+	    }
+	    
+	     @BeforeTest
+	        public void setupObjects() throws IOException   {
+	            setup(); // Load properties
+	           
+	        }
+	
+}

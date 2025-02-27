@@ -1,0 +1,38 @@
+package test;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import base.Basetest;
+import pages.Mainpage;
+import utils.AnnotationContants;
+
+public class MainTest extends Basetest {
+	
+		Mainpage obj;
+		
+		@BeforeTest
+		public void object() throws IOException {
+			obj=new Mainpage(driver);
+			setup();
+		}
+		@Test(priority=1)
+		public void try_purchase() {
+			obj.isDisplayed();
+			System.out.println("Page Loaded properly");
+			obj.search();
+			System.out.println("Item searched");
+			obj.see_options();
+			obj.colour();
+			WebElement actres=(obj.not_available());
+			Assert.assertEquals(actres, AnnotationContants.error);
+			obj.tab_close();
+		}
+		
+	
+}
+

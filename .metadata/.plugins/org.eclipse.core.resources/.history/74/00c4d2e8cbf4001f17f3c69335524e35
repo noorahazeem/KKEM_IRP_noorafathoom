@@ -1,0 +1,27 @@
+package test;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.reporters.jq.Main;
+
+import base.Basetest;
+import pages.Mainpage;
+
+public class MainTest extends Basetest {
+	
+		Mainpage obj;
+		
+		@BeforeTest
+		public void object() throws IOException {
+			obj=new Mainpage(driver);
+			setup();
+		}
+		@Test(priority=1)
+		public void mainpage() {
+			
+		}
+		
+	
+}

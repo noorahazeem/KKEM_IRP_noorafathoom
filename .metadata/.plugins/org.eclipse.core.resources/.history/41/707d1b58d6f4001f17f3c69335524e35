@@ -1,0 +1,26 @@
+package test;
+
+import java.io.IOException;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import base.Basetest;
+import pages.Cart;
+
+public class CartTest extends Basetest {
+	Cart obj;
+	
+	@BeforeTest
+	public void object() throws IOException {
+		obj=new Cart(driver);
+		setup();
+	}
+	@Test(priority=1)
+	public void cart_optons() {
+		obj.isDisplayed();
+		System.out.println("Cart icon displayed");
+		obj.itemDisplayed();;
+		System.out.println("Item added in the cart displayed ");
+	}
+}

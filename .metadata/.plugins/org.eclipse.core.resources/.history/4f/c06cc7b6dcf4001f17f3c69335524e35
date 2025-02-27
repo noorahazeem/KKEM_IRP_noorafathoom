@@ -1,0 +1,10 @@
+In the Automation of the website https://www.amazon.com/, there added a wait to enter the captcha
+after that, the page is loaded.
+Verified whether the title AMAZON is displayed or not
+In the search bar, searched for the item S23 Ultra.
+From the give options, selected to the first item 
+Then navigated to the selected item page
+Go for more colour options and selected Gray colour
+Navigated to the buying option for the gray colour.
+Added item to the cart 
+Item tab closed and navigated to hte home page.

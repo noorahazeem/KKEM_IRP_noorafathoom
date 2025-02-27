@@ -1,0 +1,21 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class Main {
+	WebDriver driver;
+	
+	//constructor  to initialize WebDriver
+	public  Main(WebDriver drv) {
+		this.driver=drv;
+	}
+	
+	public  void search() {
+		WebElement srch=driver.findElement(By.xpath("//input[@type='text' and @id='twotabsearchtextbox']"));
+		srch.sendKeys("s23 ultra");
+		WebElement button=driver.findElement(By.xpath("//input[@type='submit' and @id='nav-search-submit-button']"));
+		button.click();
+	}
+}
